@@ -15,11 +15,13 @@ variable "instance_type" {
 
 }
 
+#Provide access key of IAM User or mention it as env variable for security
 variable "access_key" {
   type    = string
   default = ""
 }
 
+#Provide sceret key of IAM User or mention it as env variable for security
 variable "secret_key" {
   type    = string
   default = ""
