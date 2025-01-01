@@ -3,7 +3,6 @@
 
 resource "aws_key_pair" "Swiggy-Key" {
   key_name   = "Swiggy-key"
-  tags = "Swiggy-Web-App-Key"
   public_key = file("${path.module}/id_rsa.pub")
 }
 
