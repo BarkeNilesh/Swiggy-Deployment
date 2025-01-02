@@ -62,7 +62,7 @@ pipeline{
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image sumit202/swiggy:latest > trivy.txt" 
+                sh "trivy image nileshbarke28/swiggy:latest > trivy.txt" 
             }
         }
     }
